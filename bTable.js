@@ -38,7 +38,8 @@ var bTable = {
                 alignment: "pagination-right"
         }
         $('#tbPagination').bootstrapPaginator(paginations);
-         
+        
+               
         //Sorting click
         $('#idTable th').on('click', function(){
             self.resetSorting(this);

@@ -17,6 +17,12 @@ table.dataTable th:active {
     outline: none;
 }
 
+table.dataTable th{
+    -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 table tbody tr.active td,
 .table tbody tr.active th {
     background-color: #08C;
@@ -51,3 +57,4 @@ table tbody tr.active td,
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
+

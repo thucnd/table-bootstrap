@@ -37,7 +37,7 @@
             title: 'Countries',
             useRp: true,
             rp: 15,
-            tblClass: 'table-bordered table-hover table-responsive ',
+            tblClass: 'table-bordered table-hover table-responsive table-striped',
             showTableToggleBtn: true,
             width: 700,
             height: 200
