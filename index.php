@@ -8,10 +8,12 @@
         <script src="bootstrap-paginator.js"></script>
         <script src="bTable.js"></script>
         <script src="colResizable-1.3.min.js"></script>
+<!--        <script src="jquery.floatThead.js"></script>-->
+        <link href="bootstrap-theme.min.css" rel="stylesheet">
         <link href="table.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body >
         <div class="container">
             <div class="bTable"></div>
         </div> <!-- /container -->
@@ -22,14 +24,14 @@
 
     $(document).ready(function() {
         var wizard = $('.bTable').btable({
-            url: 'post2.php',
+            url: 'post-json.php',
             dataType: 'json',
             colModel: [
                 {display: 'ISO', name: 'iso', width: 40, sortable: true, align: 'center'},
                 {display: 'Name', name: 'name', width: 180, sortable: true, align: 'left'},
                 {display: 'Printable Name', name: 'printable_name', width: 120, sortable: true, align: 'left'},
-                {display: 'ISO3', name: 'iso3', width: 130, sortable: true, align: 'left', hide: true},
-                {display: 'Number Code', name: 'numcode', width: 80, sortable: true, align: 'right'}
+                {display: 'ISO3', name: 'iso3', width: 80, sortable: true, align: 'left', hide: true},
+                {display: 'Number Code', name: 'numcode', width: 130, sortable: true, align: 'right'}
             ],
             sortname: "iso",
             sortorder: "asc",
@@ -39,8 +41,8 @@
             rp: 15,
             tblClass: 'table-bordered table-hover table-responsive table-striped',
             showTableToggleBtn: true,
-            width: 700,
-            height: 200
+            width: 700
+            //height: 200
         });
     });
 </script>
