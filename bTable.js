@@ -182,7 +182,7 @@ var bTable = {
     },
     displayTableFooter: function() {
         var self = this;
-        var strPage = '<div class="tb-box-left"><select id="tbPageShow" >';
+        var strPage = '<div class="tb-box-left"><select id="tbPageShow" class="form-control" style="width: 80px;">';
         strPage += '<option value="10" selected="selected">10</option>';
         strPage += '<option value="25">25</option>';
         strPage += '<option value="50">50</option>';
